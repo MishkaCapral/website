@@ -1,135 +1,88 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>SoftServe HTML/CSS/JS Fundamentals</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/libs/fontawesome-all.min.css">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banderogus</title>
+
+    <link rel="preload" href="./img/gus-anim.gif" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+<body>
+      <section class="main-page">
+        <div class="wrapper">
+        <div class="main-page-left-side">
+         <div class="main-page-text-container">
+            
+        <h2 class="main-page-description">Доброго вечора, ми з України</h2>
+        <h1 class="main-page-title">Бандерогусь</h1>
+        <p class="main-page-text">
+        Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!
+        </p>
 
-<body class="is-preload">
+        <button class="main-page-button" id="go-to-form-btn">Запустити гуся</button>
+        </div>
+       </div>
+        <img src="./img/gus-main-page.svg" alt="">
+      </section>
+      <section class="gus-facts">
+        <img src="./img/tryzub.svg" class="tryzub">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+       <h3 class="fact-in-gus">Цікаві факти про бандерогусей</h3>
+       
+        <p class="gus-facts-description">
+          Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<span class="icon fa-gem"></span>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>HTML/CSS/JS Fundamentals</h1>
-					<p>I am ready to learn how to build websites</p>
-					<p id="student-name">Mykhailo Shkliarenko</p>
-					<div class="clock"></div>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#work">Study</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
-				</ul>
-			</nav>
-		</header>
+        </p>
+        <div class="wrapper">
+          <div class="gus-fact-item">
+            <img src="./img/gus1.svg">
+            <h3 class="gus-fact-item-title">Система навігації</h3>
+            <p class="gus-fact-item-description">Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на етапі збірки
+            
+            </p>
+        </div>
+        <div class="gus-fact-item">
+          <img src="./img/gus2.svg">
+          <h3 class="gus-fact-item-title">Очі-тепловізори</h3>
+          <p class="gus-fact-item-description">Допомагають виявити характер сигнатури об’єктів та значно підвищують точність удару
+          
+          </p>
+      </div>
+      <div class="gus-fact-item">
+        <img src="./img/gus3.svg">
+        <h3 class="gus-fact-item-title">Байракрила</h3>
+        <p class="gus-fact-item-description">Можуть нести 2-4 керовані ракети, що вражають ціль на відстані «ніхріна собі» кілометрів
+        </p>
+    </div>
+        </div>
+      </section>
+<section class="form-section">
+<form action="#" class="form-container" id="form" netlify>
+  <img src="./img/tryzub.svg">
+  <h4 class="form-title">Поділися, будь ласка, поштою</h4>
+  <p class="form-description">та запиши гуся до бандерозагону</p>
+  <div class="form-field">
+    
+    <label for="user-name" class="form-field-lable">Ім'я
 
-		<!-- Main -->
-		<div id="main">
+    </label>
+    <input type="text" class="form-field-input" name="Ім'я" id="user-name">
+   </div>
+   <div class="form-field form-field-email">
+    <label for="user-email" class="form-field-lable">Email</label>
+    <input type="email" class="form-field-input" name="Email" id="user-email">
+    
+  </div>
+   <button class="form-btn" id="launch-btn">Запустити гуся</button>
+</form>
 
-			<!-- Intro -->
-			<article id="intro">
-				<h2 class="major">Intro</h2>
-				<!-- <span class="image main"><img src="https://placekitten.com/408/287" alt="Kitten" /></span> -->
-				<p class="intro__text-container">Hello here</p>
-			</article>
-
-			<!-- Work -->
-			<article id="work">
-				<h2 class="major">Study</h2>
-				<!-- <span class="image main"><img src="https://placekitten.com/600/300" alt="Kitten" /></span> -->
-				<p>The course is made out of 12 sessions lasting 3-4 hours and occurring 3 times per week. Atop to that,
-					you'll need to reserve 6-8 hours to complete practice tasks.</p>
-				<p></p>
-			</article>
-
-			<!-- About -->
-			<article id="about">
-				<h2 class="major">About</h2>
-				<span class="image main"><img src="images/ss-ita.jpg" alt="IT Academy" /></span>
-				<p>SoftServe Academy is a part of the Talent Acceleration Center at SoftServe University.<br>
-					Here you can find different learning solutions to start a career in IT.
-					You will get job-ready skills to start a career in IT. Come for experience and build your future
-					with us! <a href="https://career.softserveinc.com/en-us/learning-and-certification">LEARNING &
-						CERTIFICATION</a> </p>
-			</article>
-
-			<!-- Contact -->
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<form method="post" action="https://formspree.io/f/mnqyarjr">
-					<div class="fields">
-						<div class="field half">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="4"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="primary" /></li>
-						<li><input type="reset" value="Reset" /></li>
-					</ul>
-				</form>
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</article>
-
-			<!-- Elements -->
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<p class="copyright">©<a href="https://softserveinc.com">SoftServe Academy</a>.</p>
-		</footer>
-
-	</div>
-
-	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="assets/libs/jquery.min.js"></script>
-	<script src="assets/libs/browser.min.js"></script>
-	<script src="assets/libs/breakpoints.min.js"></script>
-	<script src="assets/libs/util.js"></script>
-
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/clock.js"></script>
-	<script src="assets/js/currency.js"></script>
+</section>
+<script src="./js/form.js"></script>
 </body>
-
 </html>
